@@ -14,11 +14,11 @@ import "../board.css";
     
 
 };*/
-const  Board = ({squares , onClick}) => { 
+const  Board = (props) => { 
     return (
      <div className="board">
-         {squares.map((square, i) => (
-           <Square key={i} value={square} onClick={() => onClick(i)}/>
+         {props.squares.map((square, i) => (
+           <Square key={i} value={square} onClick={() => props.onClick(i)}/>
          ))}
        
      </div>

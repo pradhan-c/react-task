@@ -11,11 +11,11 @@ const style ={
 
 };
 
-const  Square = ({value ,onClick}) => { 
+function  Square(props){ 
     return (
      
-          <button style={style} onClick={onClick}>
-              {value}
+          <button style={style} onClick={props.onClick}>
+              {props.value}
           </button>
           
       
