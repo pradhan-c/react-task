@@ -67,7 +67,7 @@ function Game()  {
                      
                          {winner ?  'Winner:' + winner : 'Next Player : ' + (xisNext ? 'X' : 'O')}
                      </p>
-                     <p>{draw ? 'The match is a draw' : ''}</p>
+                     <p>{draw && !winner ? 'The match is a draw' : ''}</p>
                 
                      {renderMoves()}
                   </div>

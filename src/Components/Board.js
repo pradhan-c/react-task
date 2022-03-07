@@ -14,7 +14,7 @@ import "../board.css";
     
 
 };*/
-const  Board = (props) => { 
+function  Board(props) { 
     return (
      <div className="board">
          {props.squares.map((square, i) => (
